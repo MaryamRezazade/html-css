@@ -12,8 +12,8 @@ Fonts
 @font-face {
   font-family: "vazir";
   src: url("../fonts/vazir/Vazir-Bold-FD-WOL.woff") format("woff2"),
-      url("../fonts/vazir/Vazir-Bold-FD-WOL.woff") format("woff"),
-      url("../fonts/vazir/Vazir-Bold-FD-WOL.ttf") format("truetype");
+    url("../fonts/vazir/Vazir-Bold-FD-WOL.woff") format("woff"),
+    url("../fonts/vazir/Vazir-Bold-FD-WOL.ttf") format("truetype");
 }
 
 /*
@@ -64,15 +64,15 @@ h4 {
 
 @media screen and (min-width: 800px) {
   h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   h2 {
-      font-size: 1.75rem;
+    font-size: 1.75rem;
   }
 
   h4 {
-      font-size: 1.25rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -106,7 +106,7 @@ h4 {
 
 @media screen and (min-width: 992px) {
   .section-center {
-      width: 95vw;
+    width: 95vw;
   }
 }
 
@@ -126,7 +126,7 @@ Header
 .header {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(../images/header.jpg) center/cover no-repeat fixed;
+    url(../images/header.jpg) center/cover no-repeat fixed;
   position: relative;
 }
 
@@ -160,10 +160,10 @@ Header
 .content-divider {
   height: 0.5rem;
   background: linear-gradient(
-      to left,
-      var(--clr-primary),
-      var(--clr-primary-light),
-      var(--clr-primary)
+    to left,
+    var(--clr-primary),
+    var(--clr-primary-light),
+    var(--clr-primary)
   );
 }
 
@@ -212,15 +212,15 @@ Features
 
 @media screen and (min-width: 576px) {
   .feature {
-      float: right;
-      width: 50%;
+    float: right;
+    width: 50%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature {
-      float: right;
-      width: 25%;
+    float: right;
+    width: 25%;
   }
 }
 
@@ -261,13 +261,13 @@ About
 
 @media screen and (min-width: 992px) {
   .about-image {
-      float: left;
-      width: 50%;
+    float: left;
+    width: 50%;
   }
 
   .about-info {
-      float: right;
-      width: 50%;
+    float: right;
+    width: 50%;
   }
 }
 /*
@@ -275,61 +275,59 @@ About
 product
 ===================
 */
-.products{
+.products {
   background: var(--clr-grey-10);
 }
-.product-text{
+.product-text {
   color: var(--clr-grey-5);
   max-width: 26rem;
   margin-left: auto;
 }
-.btn-product{
+.btn-product {
   margin-top: 1.5rem;
 }
 .section-title h2 {
   margin-bottom: 1.5rem;
 }
-.product{
+.product {
   margin-bottom: 2rem;
 }
-.product-price{
+.product-price {
   color: var(--clr-primary);
-direction: rtl;
+  direction: rtl;
 }
-.product-img{
+.product-img {
   border-radius: var(--radius);
   margin-bottom: 1rem;
   height: 17rem;
   object-fit: cover;
 }
 @media screen and (min-width: 768px) {
-  .product{
+  .product {
     float: right;
     width: 50%;
     padding-left: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .product{
+  .product {
     width: 33.3%;
   }
 }
 @media screen and (min-width: 1200px) {
-  .products-info{
+  .products-info {
     width: 30%;
     float: right;
   }
-  .products-card{
-    width:70%;
+  .products-card {
+    width: 70%;
     float: left;
-
   }
-  .product{
+  .product {
     margin-bottom: 0;
-    
+
     padding-left: 0;
     padding-right: 2rem;
-
   }
 }
 /*
@@ -337,32 +335,49 @@ direction: rtl;
 Services
 ===================
 */
-.section-center{
+.services-title {
   text-align: center;
 }
-.services-card{
+.services-card {
   background: var(--clr-grey-10);
   margin: 2rem 0;
   border-radius: var(--radius);
-  box-shadow: 0 5px 15px rgb(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: var(--transition);
 }
-.services-card hover{
-  box-shadow: 0 5px 15px rgb(0,0,0,0.2);
-transform: scale(1.02);
+.services-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
 }
-.services-img{
+.services-img {
+  height: 17rem;
+  object-fit: cover;
   border-top-right-radius: var(--radius);
   border-top-left-radius: var(--radius);
 }
-.services-info{
-  padding: 2rem 0;
+.services-info {
+  padding: 3rem 1rem 2.5rem 1rem;
+  text-align: center;
 }
 .services-info p {
-  padding: 2rem 0;
+  margin: 1rem auto;
   color: var(--clr-grey-5);
+  max-width: 20rem;
 }
-.services-img{
-  height: 17rem;
 
+@media screen and (min-width: 768px) {
+  .services-card {
+    float: right;
+    width: 45%;
+    margin-left: 5%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .services-card {
+    width: 30%;
+    margin-left: 3.33%;
+  }
+}
+.services-img-container{
+  position: relative;
 }
