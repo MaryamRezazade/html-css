@@ -332,3 +332,37 @@ direction: rtl;
 
   }
 }
+/*
+===================
+Services
+===================
+*/
+.section-center{
+  text-align: center;
+}
+.services-card{
+  background: var(--clr-grey-10);
+  margin: 2rem 0;
+  border-radius: var(--radius);
+  box-shadow: 0 5px 15px rgb(0,0,0,0.1);
+  transition: var(--transition);
+}
+.services-card hover{
+  box-shadow: 0 5px 15px rgb(0,0,0,0.2);
+transform: scale(1.02);
+}
+.services-img{
+  border-top-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+}
+.services-info{
+  padding: 2rem 0;
+}
+.services-info p {
+  padding: 2rem 0;
+  color: var(--clr-grey-5);
+}
+.services-img{
+  height: 17rem;
+
+}
