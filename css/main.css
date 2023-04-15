@@ -381,3 +381,14 @@ Services
 .services-img-container{
   position: relative;
 }
+.service-icon{
+  position: absolute;
+  color: var(--clr-primary);
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%,50%);
+  background: var(--clr-primary-light);
+  padding: 0.5rem 0.7rem 0.1rem 0.7rem;
+  border-radius: 50%;
+  border: 0.3rem solid var(--clr-grey-10);
+}
