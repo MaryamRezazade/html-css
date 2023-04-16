@@ -378,17 +378,87 @@ Services
     margin-left: 3.33%;
   }
 }
-.services-img-container{
+.services-img-container {
   position: relative;
 }
-.service-icon{
+.service-icon {
   position: absolute;
   color: var(--clr-primary);
   left: 50%;
   bottom: 0;
-  transform: translate(-50%,50%);
+  transform: translate(-50%, 50%);
   background: var(--clr-primary-light);
   padding: 0.5rem 0.7rem 0.1rem 0.7rem;
   border-radius: 50%;
   border: 0.3rem solid var(--clr-grey-10);
+}
+/*
+===================
+contact us
+===================
+*/
+.contact {
+  background: var(--clr-grey-10);
+}
+.contact article {
+  margin: 1rem 0;
+}
+.contact-item {
+  margin-bottom: 1.7rem;
+}
+.contact-title {
+  color: var(--clr-primary);
+  direction: rtl;
+  font-weight: 400;
+}
+.contact-text {
+  font-size: 1.1rem;
+}
+.contact-form {
+  background-color: var(--clr-white);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: var(--transition);
+  max-width: 35rem;
+}
+.contact-form:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h3 {
+  color: var(--clr-grey-5);
+  padding-top: 1.25rem;
+}
+.form-group {
+  padding: 1rem 1.5rem;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: var(--clr-grey-10);
+  border-radius: var(--radius);
+  direction: rtl;
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-1);
+}
+.form-control::placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-1);
+}
+.submit-btn {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  font-family: var(--ff-primary);
+}
+@media screen and (min-width: 992px) {
+  .contact article {
+    width: 50%;
+    float: right;
+  }
 }
