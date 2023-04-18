@@ -117,7 +117,22 @@ h4 {
 .section-title {
   margin-bottom: 2rem;
 }
-
+/*
+===================
+Navbar
+===================
+*/
+.navbar-btn{
+  color: var(--clr-primary);
+  top: 5%;
+  right: 5%;
+  font-size: 2rem;
+  position: fixed;
+  z-index: 1;
+}
+.nav-item{
+  background: var(--clr-grey-10);
+}
 /*
 ===================
 Header
