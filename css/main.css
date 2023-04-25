@@ -129,7 +129,8 @@ Navbar
   font-size: 1.5rem;
   position: fixed;
   z-index: 1;
-
+   cursor: pointer;
+  animation: bounce 2s ease infinite;
 }
 .navbar {
   background-color: var(--clr-grey-10);
@@ -143,7 +144,9 @@ Navbar
   transition: var(--transition);
   transform: translateX(100%);
 }
-
+.showNav {
+  transform: translate(0);
+}
 .navbar-header{
   text-align: left;
 }
@@ -180,7 +183,7 @@ Navbar
   color: var(--clr-primary);
 }
 @media screen and (min-width: 768px) {
-  .nav-item {
+  .navbar {
     width: 30vw;
     max-width: 20rem;
   }
